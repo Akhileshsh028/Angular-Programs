@@ -2,11 +2,15 @@
 
 app.controller("LoginController", function ($scope) 
 {
-    $scope.username = "Akhilesh";
-    $scope.password = "Akhilesh@123";
+    $scope.loginInfo =
+    {
+        username: "Akhilesh",
+        password: "Akhilesh@123"
+    };
+
 
     $scope.OnLogin = function () {
-        alert("Username :" + $scope.username + "And Password :" + $scope.password);
+        alert("Username :" + $scope.loginInfo.username + "And Password :" + $scope.loginInfo.password);
     };
 });
 
