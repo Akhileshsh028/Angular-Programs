@@ -4,5 +4,8 @@
 
 app.controller("LoginController", () =>
 {
-    alert("Dead Code");
+    function OnLogin() {
+        alert("Login Button Clicked.");
+    }
 });
+
