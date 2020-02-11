@@ -1,11 +1,12 @@
 ﻿var app = angular.module('testApp', []);
 
-
-
-app.controller("LoginController", () =>
+app.controller("LoginController", function ($scope) 
 {
-    function OnLogin() {
-        alert("Login Button Clicked.");
-    }
+    $scope.username = "Akhilesh";
+    $scope.password = "Akhilesh@123";
+
+    $scope.OnLogin = function () {
+        alert("Username :" + $scope.username + "And Password :" + $scope.password);
+    };
 });
 
