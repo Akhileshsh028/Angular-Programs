@@ -9,7 +9,7 @@
 <body ng-controller="EmployeeController">
     <div>
         <h2>
-            Employee Details 
+            Employee Details
         </h2>
     </div>
     <br />
@@ -43,7 +43,7 @@
             Click
         </button>
     </div>
-    <br/>
+    <br />
     <p>
         <label>
             Employee Deatils :
@@ -51,6 +51,16 @@
                 <option value="">------Select---------</option>
             </select>
             <button ng-click="OnEmployeeClick()">Click</button>
+        </label>
+    </p>
+    <br />
+    <p>
+        <label>
+            Employee Deatils :
+            <select ng-model="SelectedEmployee1" ng-options="e.Location as e.Name for e in empList">  <!-- important e.location (is value) and e.name (is key) so change the value to get the desired result. -->
+                <option value="">------Select---------</option>
+            </select>
+            <button ng-click="OnEmployeeClick1()">Click</button>
         </label>
     </p>
 </body>

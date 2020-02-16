@@ -19,7 +19,14 @@ app.controller("EmployeeController", function ($scope, $http) {
     };
 
     $scope.OnEmployeeClick = function () {
-        alert($scope.SelectedEmployee);
+        // alert($scope.SelectedEmployee);
+        alert(JSON.stringify($scope.SelectedEmployee));
+    };
+
+    // we don't want the object to hold everything that decreases the performance.
+    $scope.OnEmployeeClick1 = function () {
+        // alert($scope.SelectedEmployee);
+        alert($scope.SelectedEmployee1);
     };
 
 });
