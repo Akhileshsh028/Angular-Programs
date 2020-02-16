@@ -83,7 +83,9 @@
     <Content Include="Global.asax" />
     <Content Include="index.html" />
     <Content Include="Scripts\Angular.js" />
-    <Content Include="Scripts\Service_Factory_Js.js" />
+    <Content Include="Scripts\App_Scripts\ArithOpsFactory.js" />
+    <Content Include="Scripts\App_Scripts\ArithOpsService.js" />
+    <Content Include="Scripts\MainAppScript.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

@@ -1,48 +1,5 @@
 ﻿var app = angular.module("Service_FactoryApp", []);
 
-app.service("ArithOpsService", function () {
-
-    this.add = function (a, b) {
-        return parseInt(a) + parseInt(b);
-    };
-
-    this.sub = function (a, b) {
-        return a - b;
-    };
-
-    this.mul = function (a, b) {
-        return a * b;
-    };
-
-    this.div = function (a, b) {
-        return a / b;
-    };
-     
-});
-
-app.factory("ArithOpsFactory", function () {
-
-    var obj = {};
-
-    obj.add = function (a, b) {
-        return parseInt(a) + parseInt(b);
-    };
-
-    obj.sub = function (a, b) {
-        return a - b;
-    };
-
-    obj.mul = function (a, b) {
-        return a * b;
-    };
-
-    obj.div = function (a, b) {
-        return a / b;
-    };
-
-    return obj;
-
-});
 
 app.controller("Service_Controller", function ($scope, ArithOpsFactory) {
 
