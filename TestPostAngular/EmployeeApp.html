@@ -7,6 +7,11 @@
     <script src="Scripts/EmployeeApp_Script.js"></script>
 </head>
 <body ng-controller="EmployeeController">
+    <br/>
+      <div>
+          <label>Search <input type="text" ng-model="SearchText"/> </label>
+      </div>
+    <br/>
     <div>
         <h2>
             Employee Details
@@ -23,11 +28,12 @@
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="emp in empList">
+            <tr ng-repeat="emp in empList | filter : SearchText ">
                 <td>{{emp.Id}}</td>
-                <td>{{emp.Name}}</td>
-                <td>{{emp.Location}}</td>
-                <td>{{emp.Salary}}</td>
+                <!--<td>{{emp.Name}}</td>-->
+                <td>{{emp.Name | uppercase }}</td>
+                <td>{{emp.Location | lowercase}}</td>
+                <td>{{emp.Salary | currency : '₹'}}</td>
             </tr>
         </tbody>
     </table>
