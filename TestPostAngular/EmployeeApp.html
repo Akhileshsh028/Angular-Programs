@@ -47,7 +47,7 @@
     <p>
         <label>
             Employee Deatils :
-            <select ng-model="SelectedEmployee" ng-options="e for e in empList">
+            <select ng-model="SelectedEmployee" ng-options="e.Name for e in empList">
                 <option value="">------Select---------</option>
             </select>
             <button ng-click="OnEmployeeClick()">Click</button>
