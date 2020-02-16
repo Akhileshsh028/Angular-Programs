@@ -9,9 +9,13 @@
 <body ng-controller="EmployeeController">
     <br/>
       <div>
-          <label>Search <input type="text" ng-model="SearchText"/> </label>
+          <label>Search : <input type="text" ng-model="SearchText"/> </label>
       </div>
     <br/>
+    <div>
+        <label>Order By : <input type="text" ng-model="OrderByColumn" /> </label>
+    </div>
+    <br />
     <div>
         <h2>
             Employee Details
@@ -28,7 +32,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="emp in empList | filter : SearchText | orderBy : 'Location' ">
+            <tr ng-repeat="emp in empList | filter : SearchText | orderBy : OrderByColumn ">
                 <td>{{emp.Id}}</td>
                 <!--<td>{{emp.Name}}</td>-->
                 <td>{{emp.Name | uppercase }}</td>
