@@ -12,7 +12,7 @@
             Employee Details 
         </h2>
     </div>
-    </br>
+    <br />
     <table>
         <thead>
             <tr>
@@ -31,5 +31,17 @@
             </tr>
         </tbody>
     </table>
+    <br />
+    <div>
+        <label>
+            Roles :
+            <select ng-model="SelectedRoles" ng-options="r for r in RolesList">
+                <option value="">-----Select-----</option>
+            </select>
+        </label>
+        <button ng-click="OnRolesClick()">
+            Click
+        </button>
+    </div>
 </body>
 </html>

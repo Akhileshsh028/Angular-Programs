@@ -10,5 +10,12 @@ app.controller("EmployeeController", function ($scope, $http) {
 
     }, function (error) {
         console.log(error);
-        });
+    });
+
+    $scope.RolesList = ["Employee", "Manager", "Team Lead", "Technical Evangulist"];
+
+    $scope.OnRolesClick = function () {
+        alert($scope.SelectedRoles);
+    };
+
 });
