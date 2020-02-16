@@ -3,7 +3,7 @@
 app.service("ArithOpsService", function () {
 
     this.add = function (a, b) {
-        return a + b;
+        return parseInt(a) + parseInt(b);
     };
 
     this.sub = function (a, b) {
