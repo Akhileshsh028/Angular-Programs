@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html ng-app="VerbTest">
+<head>
+    <meta charset="utf-8" />
+    <title>testing the Post Request in angular</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
+    <script src="Scripts/AppScript.js"></script>
+</head>
+<body ng-controller="LoginController">
+    <div>
+        <label> UserName : <input type="text" ng-model="lgi.username" /> </label>
+    </div>
+    <div>
+        <label> Password : <input type="text" ng-model="lgi.password" /> </label>
+    </div>
+    <button ng-click="Login()">
+        Submit
+    </button>
+  
+</body>
+</html>
