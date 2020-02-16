@@ -1,6 +1,7 @@
 ﻿var app = angular.module("EmployeeApp", []);
 
-app.filter("empType", function () {
+app.filter("et", function () {
+
     return function (input) {
         if (input) {
             return "Permanent Employee";
