@@ -28,7 +28,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="emp in empList | filter : SearchText ">
+            <tr ng-repeat="emp in empList | filter : SearchText | orderBy : 'Location' ">
                 <td>{{emp.Id}}</td>
                 <!--<td>{{emp.Name}}</td>-->
                 <td>{{emp.Name | uppercase }}</td>
@@ -68,6 +68,12 @@
             </select>
             <button ng-click="OnEmployeeClick1()">Click</button>
         </label>
+    </p>
+    <br />
+    <p>
+        <ol>
+            <li>If you need a specific currency in the search of angular specify it. otherwise make it simple .</li>
+        </ol>
     </p>
 </body>
 </html>
