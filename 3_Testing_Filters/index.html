@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html ng-app="Service_FactoryApp">
+<head>
+    <meta charset="utf-8" />
+    <title> Angular Service vs factory </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
+    <script src="Scripts/Service_Factory_Js.js"></script>
+</head>
+<body ng-controller="Service_Controller">
+    <p>
+        <h1>Important Points</h1>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </p>
+    <br />
+    <p>
+        <div>
+            <label> FirstNumber : <input type="text" ng-model="firstnumber" /> </label>
+        </div>
+        <br />
+        <div>
+            <label> SecondNumber : <input type="text" ng-model="secondnumber" /> </label>
+        </div>
+        <br />
+        <button ng-click="arithops(1)">Add</button>
+        <button ng-click="arithops(2)">Sub</button>
+        <button ng-click="arithops(3)">Mul</button>
+        <button ng-click="arithops(4)">Divide</button>
+        <br />
+    </p>
+    <div>
+        {{resultMessage}}
+    </div>
+</body>
+</html>
