@@ -18,4 +18,8 @@ app.controller("EmployeeController", function ($scope, $http) {
         alert($scope.SelectedRoles);
     };
 
+    $scope.OnEmployeeClick = function () {
+        alert($scope.SelectedEmployee);
+    };
+
 });

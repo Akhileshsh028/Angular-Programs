@@ -43,5 +43,15 @@
             Click
         </button>
     </div>
+    <br/>
+    <p>
+        <label>
+            Employee Deatils :
+            <select ng-model="SelectedEmployee" ng-options="e for e in empList">
+                <option value="">------Select---------</option>
+            </select>
+            <button ng-click="OnEmployeeClick()">Click</button>
+        </label>
+    </p>
 </body>
 </html>
