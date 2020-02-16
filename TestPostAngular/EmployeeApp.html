@@ -7,11 +7,21 @@
     <script src="Scripts/EmployeeApp_Script.js"></script>
 </head>
 <body ng-controller="EmployeeController">
-    <br/>
-      <div>
-          <label>Search : <input type="text" ng-model="SearchText"/> </label>
-      </div>
-    <br/>
+    <br />
+    <div>
+        <label>Search By Any : <input type="text" ng-model="SearchText.$" /> </label>
+    </div>
+    <br />
+    <br />
+    <div>
+        <label>Search By Name : <input type="text" ng-model="SearchText.Name" /> </label>
+    </div>
+    <br />
+    <br />
+    <div>
+        <label>Search By Location : <input type="text" ng-model="SearchText.Location" /> </label>
+    </div>
+    <br />
     <div>
         <label>Order By : <input type="text" ng-model="OrderByColumn" /> </label>
     </div>
@@ -67,7 +77,8 @@
     <p>
         <label>
             Employee Deatils :
-            <select ng-model="SelectedEmployee1" ng-options="e.Name as e.Id for e in empList">  <!-- important e.location (is value) and e.name (is key) so change the value to get the desired result. -->
+            <select ng-model="SelectedEmployee1" ng-options="e.Name as e.Id for e in empList">
+                <!-- important e.location (is value) and e.name (is key) so change the value to get the desired result. -->
                 <option value="">------Select---------</option>
             </select>
             <button ng-click="OnEmployeeClick1()">Click</button>
