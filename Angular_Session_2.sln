@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular_Session_2", "Angula
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPostAngular", "TestPostAngular\TestPostAngular.csproj", "{2E832EF3-F090-4C30-8206-6762481089A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3_Testing_Filters", "3_Testing_Filters\3_Testing_Filters.csproj", "{B4559F34-703B-4567-BA80-32BACAF025DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3_ServiceVsFactory_Filters", "3_Testing_Filters\3_ServiceVsFactory_Filters.csproj", "{B4559F34-703B-4567-BA80-32BACAF025DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
