@@ -39,6 +39,7 @@
                 <th>Employee Name</th>
                 <th>Employee Location</th>
                 <th>Employee Salary</th>
+                <th>Employeement Type</th>
             </tr>
         </thead>
         <tbody>
@@ -48,6 +49,7 @@
                 <td>{{emp.Name | uppercase }}</td>
                 <td>{{emp.Location | lowercase}}</td>
                 <td>{{emp.Salary | currency : '₹'}}</td>
+                <td>{{emp.IsPermanent}}</td>
             </tr>
         </tbody>
     </table>

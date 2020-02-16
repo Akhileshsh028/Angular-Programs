@@ -11,6 +11,7 @@ namespace TestPostAngular.Models
         public string Name { get; set; }
         public string Location { get; set; }
         public int Salary { get; set; }
+        public bool IsPermanent { get; set; }
 
     }
 }

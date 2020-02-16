@@ -1,5 +1,15 @@
 ﻿var app = angular.module("EmployeeApp", []);
 
+app.filter("empType", function () {
+    return function (input) {
+        if (input) {
+            return "Permanent Employee";
+        } else {
+            return "Contract Employee";
+        }
+    };
+});
+
 app.controller("EmployeeController", function ($scope, $http) {
 
     $scope.empList = [];
