@@ -10,6 +10,18 @@ namespace TestPostAngular.Controllers
 {
     public class HomeController : ApiController
     {
+
+        public List<Employee> GetEmployees()
+        {
+            return new List<Employee>
+            {
+                new Employee{Id=101, Name="Akhilesh Kumar", Location="Indore" , Salary=56465 },
+                new Employee{Id=102, Name="Saurabh Tiwari", Location="Mumbai" , Salary=56465 },
+                new Employee{Id=103, Name="Ashok Verma", Location="Noida" , Salary=56465 },
+                new Employee{Id=104, Name="Shubham Mannewar", Location="Chennai" , Salary=56465 },
+                new Employee{Id=101, Name="Allwin Charles", Location="Jabalpur" , Salary=56465 }
+            };
+        }
         
         [HttpPost]
         public bool ValidateLogin(loginModel _loginModel)

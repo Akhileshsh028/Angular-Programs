@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html ng-app="EmployeeApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Employee Application</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
+    <script src="Scripts/EmployeeApp_Script.js"></script>
+</head>
+<body ng-controller="EmployeeController">
+    <div>
+        <h2>
+            Employee Details 
+        </h2>
+    </div>
+    </br>
+    <table>
+        <thead>
+            <tr>
+                <th>Employee Id</th>
+                <th>Employee Name</th>
+                <th>Employee Location</th>
+                <th>Employee Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="emp in empList">
+                <td>{{emp.Id}}</td>
+                <td>{{emp.Name}}</td>
+                <td>{{emp.Location}}</td>
+                <td>{{emp.Salary}}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
